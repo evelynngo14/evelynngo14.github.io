@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    font-family: "DM MONO", serif;
+}
+.titles{
+    color:rgb(255, 255, 255);
+    font-family: "DM Mono", serif;
+}
+#evesgarden{
+    margin: 25px;
+}
+#evesgarden:hover{
+    color:darkorchid;
+}
+#hi{
+    margin: 50px;
+    margin-left:100px;
+}
+p{
+    color: white;
+}
+#p1{
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+#img1{
+    width: 30%;
+    display:block;
+    margin:auto;
+}
