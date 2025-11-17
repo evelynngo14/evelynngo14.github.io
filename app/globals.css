@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+    --background: #cb8ac0;
+    --foreground: #ffffff;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --color-border: #3b467e;
+    --color-tabBlue: #7c94fb;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #ededed;
+        --foreground: #0a0a0a;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-martian-mono);
+}
+
+@layer utilities {
+    @keyframes blink {
+        0%,
+        100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
+    .animate-blink {
+        animation: blink 1s step-start infinite;
+    }
+}
