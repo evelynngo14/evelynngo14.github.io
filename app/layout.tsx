@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>evelyn's site</title>
-        <meta name="theme-color" content="#CB8AC0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, #CB8AC0" />
       </head>
 
       <body
