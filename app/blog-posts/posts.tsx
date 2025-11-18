@@ -3,7 +3,11 @@ import BlogPost from "../components/BlogPost";
 
 const post03_md = `
   in this post i'm going to document how i created the dropdown menus for my random song generator project.
-  
+  &nbsp;
+  i learned that i *do not need to use a library* to create dropdown menus. modern css and html work perfectly fine to create the foundation of simple components.
+  this is also something i learned with datepickers for my event planning project, i thought i needed a library for that too-- but a datelocal-time HTML element worked well for my use.
+  javascript would then be used to handle user interactions such as opening and closing the dropdown menu and sending data to the server.
+  knowing the foundational capabilities of modern css and html helps with creating reusable and accessible components without the complexity of a library.
   `
 
 const post01_md = `i coded the retro computer window from scratch, but it took forever to get it looking how i wanted it to! i found a few websites that were life-savers for helping me visualize my layouts and understand what i was doing.  
@@ -37,7 +41,7 @@ export function Post02() {
 export function Post03() {
   return (
     <BlogPost
-      title="creating a simple dropdown for my song app"
+      title="creating simple dropdown menus for my song randomizer project"
       description=""
       date="11/18/2025"
       content={<ReactMarkdown>{post03_md}</ReactMarkdown>}
