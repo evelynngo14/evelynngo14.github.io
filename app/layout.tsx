@@ -2,7 +2,6 @@ import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
 import {Martian_Mono} from "next/font/google";
 import "./globals.css";
-import { Head } from "next/document";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -32,9 +31,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <Head>
-            <meta name="theme-color" content="#CB8AC0"/>
-        </Head>
+        <meta name="theme-color" content="#CB8AC0"/>
         <body
             className={`${martianMono.variable} ${martianMono.variable} antialiased`}
         >
