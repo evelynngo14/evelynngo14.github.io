@@ -1,7 +1,8 @@
 import { VscChevronLeft, VscChevronUp } from "react-icons/vsc";
 import { RiCloseFill } from "react-icons/ri";
 import { LuTextCursor } from "react-icons/lu";
-import BlogPost from "./BlogPost.tsx/BlogPost";
+import BlogPost from "./BlogPost";
+
 
 export default function HeroSection() {
   return (
@@ -9,7 +10,7 @@ export default function HeroSection() {
       <div className="flex flex-col relative items-center justify-center w-full h-full text-border py-3 top-30">
         <RetroWindow>
           <h1 className="text-lg text-center font-bold p-3">
-            welcome to my personal site
+            welcome to my personal website
           </h1>
           <br></br>
           <div className="text-md flex">
