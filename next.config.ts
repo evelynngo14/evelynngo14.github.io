@@ -10,11 +10,6 @@ const nextConfig: NextConfig = {
     // Optional: customize the build output directory
     distDir: ".next",
 
-    // Example: enable experimental features if needed
-    experimental: {
-        turbo: false, // set to false if you want to fall back to Webpack
-    },
-
     // Example: add React strict mode
     reactStrictMode: true,
 };

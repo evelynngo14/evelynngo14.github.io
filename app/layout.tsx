@@ -31,7 +31,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <meta name="theme-color" content="#CB8AC0"/>
+        <head>
+            <title>evelyn's site</title>
+            <meta name="theme-color" content="#CB8AC0"/>
+        </head>
+
         <body
             className={`${martianMono.variable} ${martianMono.variable} antialiased`}
         >
