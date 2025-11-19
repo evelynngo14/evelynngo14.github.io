@@ -1,12 +1,11 @@
 import { VscChevronLeft, VscChevronUp } from "react-icons/vsc";
 import { RiCloseFill } from "react-icons/ri";
 import { LuTextCursor } from "react-icons/lu";
-import BlogPost from "./BlogPost";
 
 
 export default function HeroSection() {
   return (
-    <div className="fix-scale relative mx-5 flex flex-col min-h-screen max-w-full items-center justify-center text-border">
+    <div className="relative mx-5 flex flex-col min-h-screen max-w-full items-center justify-center text-border">
       <RetroWindow>
         <h1 className="text-lg text-center font-bold p-4 m-2">
           welcome to my personal website
@@ -29,7 +28,7 @@ type Props = {
 
 const RetroWindow = ({ children }: Props) => {
   return (
-    <div className="lg:scale-125 max-w-md sm:w-1/2 h-4xl grid grid-rows-[25px_200px_15px] grid-cols-[1fr_15px] justify-center bg-white border-3 border-border rounded-md shadow-[-6px_6px_0_#3b467e]">
+    <div className="lg:scale-105 max-w-md sm:w-1/2 h-4xl grid grid-rows-[25px_200px_15px] grid-cols-[1fr_15px] justify-center bg-white border-3 border-border rounded-md shadow-[-6px_6px_0_#3b467e]">
       <div className="rectangle col-span-full w-full h-full border-border bg-tabBlue rounded-t-xs border-b-2">
         <div className="relative top-0.5 justify-items-end text-white">
           <RiCloseFill />

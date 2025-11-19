@@ -1,10 +1,8 @@
-interface BlogPostProps {
-  title: string;
-  description: string;
-  date: string;
-  content: React.ReactNode;
-}
 
+i think i finally learned how to use tailwindcss properly.
+at first, the inline syntax looked messy and confusing, UNTIL i learned how to make it more granular. all i had to do was create props for the classes. this makes the code more declarative. it seems obvious is retrospect, but hey, at least i'm learning! here's a code snippet from what my BlogPost component looks like right now:
+
+```js
 const title = [
   'text-lg/6',
   'lg:text-2xl',
@@ -13,7 +11,7 @@ const title = [
 
 const date = [
   'text-xs',
-  'md:text-md',
+  'md:text-sm',
   'py-2',
   'text-gray-300',
   'italic'
@@ -21,7 +19,6 @@ const date = [
 
 const content = [
   'font-[family-name:var(--font-inter)]',
-  'text-base',
   'lg:text-lg'
 ]
 
@@ -38,3 +35,4 @@ export default function BlogPost(props: BlogPostProps) {
     </div>
   );
 }
+```

@@ -1,43 +1,52 @@
-import ReactMarkdown from "react-markdown";
 import BlogPost from "../components/BlogPost";
+import StyledMarkdown from "../components/StyledMarkdown";
+import fs from "fs";
+import path from "path";
 
-const post03_md = `
-  in this post i'm going to document how i created the dropdown menus for my random song generator project.
-  &nbsp;  
-  &nbsp;  
-  i learned that i *do not need to use a react library* to create dropdown menus. modern css and html work perfectly fine to create the foundation of simple components.
-  this is also something i learned with datepickers for my event planning project, i thought i needed a library for that too, but a datelocal-time HTML element worked well for my use.
-  javascript would then be used to handle user interactions such as opening and closing the dropdown menu and sending data to the server.
-  &nbsp;  
-  &nbsp;  
-  knowing the foundational capabilities of modern css and html helps with creating reusable and accessible components without the complexity of a library, which is useful
-  when you are just starting to learn development. it can be distracting trying to search for libraries when you can just use the browser's native capabilities.
-  `
+// Read the markdown file at build time
+const post05_md = fs.readFileSync(
+  path.join(process.cwd(), "app/blog/markdown/post05.md"),
+  "utf-8"
+);
 
-const post01_md = `i coded the retro computer window from scratch, but it took forever to get it looking how i wanted it to! i found a few websites that were life-savers for helping me visualize my layouts and understand what i was doing.  
-  &nbsp;  
-  \ni found good results by using a grid layout with a fixed width and height for each cell using absolute positioning. elements like the scroll bar and chevron arrows had to be manually positioned using top / right / bottom / left utilities. hopefully once i'm able to optimize the code i'll consider sharing it as a react component.`;
+const post04_md = fs.readFileSync(
+  path.join(process.cwd(), "app/blog/markdown/post04.md"),
+  "utf-8"
+);
 
-const post02_md =
-  "i'm starting this blog to share my learning journey and exploration into web development. <3";
+const post03_md = fs.readFileSync(
+  path.join(process.cwd(), "app/blog/markdown/post03.md"),
+  "utf-8"
+);
 
-export default function Post01() {
-  return (
-    <BlogPost
-      title="css"
-      description=""
-      date="11/17/2025"
-      content={<ReactMarkdown>{post01_md}</ReactMarkdown>}
-    />
-  );
-}
-export function Post02() {
+const post02_md = fs.readFileSync(
+  path.join(process.cwd(), "app/blog/markdown/post02.md"),
+  "utf-8"
+);
+
+const post01_md = fs.readFileSync(
+  path.join(process.cwd(), "app/blog/markdown/post01.md"),
+  "utf-8"
+);
+
+export function Post01() {
   return (
     <BlogPost
       title="hello world"
       description=""
       date="11/17/2025"
-      content={<ReactMarkdown>{post02_md}</ReactMarkdown>}
+      content={<StyledMarkdown>{post01_md}</StyledMarkdown>}
+    />
+  );
+}
+
+export function Post02() {
+  return (
+    <BlogPost
+      title="css"
+      description=""
+      date="11/17/2025"
+      content={<StyledMarkdown>{post02_md}</StyledMarkdown>}
     />
   );
 }
@@ -48,7 +57,31 @@ export function Post03() {
       title="creating simple dropdown menus for my song randomizer project"
       description=""
       date="11/18/2025"
-      content={<ReactMarkdown>{post03_md}</ReactMarkdown>}
+      content={<StyledMarkdown>{post03_md}</StyledMarkdown>}
     />
   )
 };
+
+export function Post04() {
+  return (
+    <BlogPost
+      title="future blog features"
+      description=""
+      date="11/18/2025"
+      content={<StyledMarkdown>{post04_md}</StyledMarkdown>}
+    />
+  )
+};
+
+export function Post05() {
+  return (
+    <BlogPost
+      title="hitting myself over the head (tailwindcss)"
+      description=""
+      date="11/19/2025"
+      content={
+        <StyledMarkdown>{post05_md}</StyledMarkdown>
+      }
+    />
+  )
+}
