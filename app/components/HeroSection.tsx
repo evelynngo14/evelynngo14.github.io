@@ -6,9 +6,9 @@ import BlogPost from "./BlogPost";
 
 export default function HeroSection() {
   return (
-    <div className="fix-scale flex flex-col min-h-screen max-w-full items-center justify-center text-border">
+    <div className="fix-scale relative mx-5 flex flex-col min-h-screen max-w-full items-center justify-center text-border">
       <RetroWindow>
-        <h1 className="text-lg text-center font-bold p-3">
+        <h1 className="text-lg text-center font-bold p-4 m-2">
           welcome to my personal website
         </h1>
         <br></br>

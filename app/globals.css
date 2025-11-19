@@ -3,6 +3,11 @@
 :root {
     --background: #cb8ac0;
     --foreground: #ffffff;
+    --border: #3b467e;
+    --tabBlue: #7c94fb;
+    --blogBG: #121212;
+    --blogText: #e7e7e7;
+    --blogTitle: #C60C3D;
 }
 
 @theme inline {
@@ -12,7 +17,8 @@
     --font-mono: var(--font-geist-mono);
     --color-border: #3b467e;
     --color-tabBlue: #7c94fb;
-    --color-blogBG: #161616;
+    --color-blogTitle: #C60C3D;
+    --color-blogBG: #121212;
     --color-blogText: #e7e7e7;
 }
 
@@ -48,10 +54,4 @@ body {
         animation: blink 1s step-start infinite;
     }
 
-    @media (min-width: 64rem) {
-        .lg\:scale-125 {
-            --tw-scale-x: 1.25;
-            --tw-scale-y: 1.25;
-        }
-    }
 }
